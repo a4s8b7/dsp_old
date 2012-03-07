@@ -1,0 +1,73 @@
+You could also use the 8 data lines in parallel port for input if you have bidirectional printer port. In thepry if everythign is set right. you could just wire switches to the data pins as above, but in practice this is not a good idea. To safely connect switches to data lines, you need to be sure that the outputs are tristated beforehand, or your switches shorting the pint go ground may damage the parallel port IC. This may be a problem after booting or rebooting where you can't be sure of the printer port operation mode (usually by default data pins are output).
+
+One practical approach is to use current limiting resistors in series "just in case" and then some pull-up resistors too.
+
+                         1K            4.7K
+         Dn Out --------^^^^^-----+----^^^^^------ (+5v)
+                                  |
+                                Switch
+                                  |
+         Ground ------------------+--------------- (Gnd)
+
+
+<= in	DB25	Cent	Name of		Reg
+=> out  pin	pin	Signal          Bit	Function Notes
+------  ----    ----    --------        ---	------------------------------
+=>	17	36	-Select		C3-	Set Low to select printer
+=>	16	31	-Init		C2+	Set Low pulse > 50uS to init
+=>	14	14	-AutoFd		C1-	Set Low to autofeed one line
+=>	 1	 1	-Strobe		C0-	Set Low pulse > 0.5 us to send
+
+<=	11	11	+Busy		S7-	High for Busy/Offline/Error
+<=	10	10	-Ack		S6+ IRQ	Low Pulse ~ 5 uS, after accept
+<=	12	12	+PaperEnd	S5+	High for out of paper
+<=	13	13	+SelectIn	S4+	High for printer selected
+<=	15	32	-Error		S3+	Low for Error/Offline/PaperEnd
+
+The Feedback input port for the Data Out register consisted of a 74LS244
+tri-state buffer; it is uninverted. Note that this port is only for
+diagnostics - if at any time the feedback buffer for the data port does
+not match the data being output, there is an error (eg: a line stuck high or
+low). Exception: bidirectional printer ports allow the 74LS374 (or equivalent)
+driver chip to be tri-stated, which makes the data feedback port into a
+legitimate unlatched input port.
+
+ Wait for not +Busy (+Busy low)
+ Set Data Out bits
+     at least 0.5 uS delay
+ Pulse -Strobe low for at least 0.5 uS
+     hold Data Out for at least 0.5 uS after end of -Strobe pulse
+ Some time later, printer will pulse -Ack low for at least 5 uS
+ Printer may lower +Busy when it raises -Ack at end of pulse
+ Set other Control outputs or check Status inputs as desired.
+
+
+The BIOS handles reinitializing the printer (function AH = 1) thus:
+   Set C2 = 0 for a few hundred microseconds (-Init pin pulsed low)
+
+The BIOS returns status in AH (functions AH = 1 or 2) is as follows:
+
+ __________________________________
+ | 7 | 6 | 5 | 4 | 3 | 2  | 1 | 0 |
+   |   |   |   |   |  not used  |___ 1 = "Time Out" (software)
+   |   |   |   |   |________________ 1 = "I/O Error" (inv C3+; -Error pin low)
+   |   |   |   |____________________ 1 = "Selected"  (C4+; +SelectIn pin high)
+   |   |   |________________________ 1 = "Paper Out" (C5+; +PaperEnd pin high)
+   |   |____________________________ 1 = "Acknowledge" (inv C6+; -Ack pin low)
+   |________________________________ 1 = "Not Busy"  (C7-; +Busy pin low)
+
+ The high 5 bits of this are essentially the Status In register from the
+
+
+he input, D3 is connected via the inverter to Select Printer. Select Printer just happens to be bit 3 of the control port. D2, D1 & D0 are connected to Init, Auto linefeed and strobe, respectively to make up the lower nibble. Now this is done, all we have to do is assemble the byte using software. The first thing we must do is to write xxxx0100 to the Control Port. This places all the control port lines high, so they can be pulled down to input data.
+
+      outportb(CONTROL, inportb(CONTROL) & 0xF0 | 0x04);
+
+Now that this is done, we can read the most significant nibble. This just happens to be the most significant nibble of the status port. As we are only interested in the MSnibble we will AND the results with 0xF0, so that the LSnibble is clear. Busy is hardware inverted, but we won't worry about it now. Once the two bytes are constructed, we can kill two birds with one stone by toggling Busy and Init at the same time.
+
+      a = (inportb(STATUS) & 0xF0); /* Read MSnibble */
+
+We can now read the LSnibble. This just happens to be LSnibble of the control port - How convenient! This time we are not interested with the MSnibble of the port, thus we AND the result with 0x0F to clear the MSnibble. Once this is done, it is time to combine the two bytes together. This is done by OR'ing the two bytes. This now leaves us with one byte, however we are not finished yet. Bits 2 and 7 are inverted. This is overcome by XOR'ing the byte with 0x84, which toggles the two bits.
+
+      a = a |(inportb(CONTROL) & 0x0F); /* Read LSnibble */
+      a = a ^ 0x84; /* Toggle Bit 2 & 7 */

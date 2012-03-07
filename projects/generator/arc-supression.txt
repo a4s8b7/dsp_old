@@ -1,0 +1,2 @@
+What type of arc suppression circuit do you  recommend for a 5v relay that switches a 12v solenoid load at 3amps (rush in current) and 1.5 amps hold in current? (the relays are rated for 6amps.) Thank you
+

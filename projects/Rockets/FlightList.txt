@@ -1,0 +1,80 @@
+
+1>need to file a NOTAM with the FAA
+
+>call 1-800-WX-BRIEF, and ask a briefer for the proper place to call. 
+
+>FAA office to notify:
+
+>Get an FAA map of your area. 
+
+>From that you can get LATITUDE = ________ / LONGITUDE = _________
+  and RADIAL = _________ / DISTANCE = ___________ from your 
+  launch site to a nearby VOR.
+
+2>FAA ATC facility nearest to the place of intended operation" 24-48 
+  hours before launch
+
+>Call 24-48 hours before the launch and give the VOR the information
+
+OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
+O                                                                   O
+O                                                                   O
+O    Rocket Name = ____________________________________             O
+O                                                                   O
+O    Wieght = _____ Engine Wieght = _____ Wieght total = _____      O
+O                                                                   O
+O    Engine type and size = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx     O
+O                           R                                 L     O
+O                           R                                 L     O
+O                           R                                 L     O
+O                           R                                 L     O
+O                           R                                 L     O
+O                           R                                 L     O
+O                           R                                 L     O
+O                           R                                 L     O
+O                           qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq     O
+O                                                                   O
+O                                                                   O
+O                                                                   O
+O    FAA office to notify:                                          O
+O                                                                   O
+O    closest Flight Service Station  (F.S.S. = (   )-   -    .      O 
+O                                                                   O
+O    Launch Sight:                                                  O
+O                                                                   O
+O    LATITUDE = ________ LONGITUDE = _________                      O
+O      RADIAL = ________  DISTANCE = _________                      O
+O    Nearest VOR = ___________________________  (   )-   -    .     O
+O                                                                   O
+O    Local NOTAM "L" number = _____________                         O
+O                                                                   O
+O ----------------------------------------------------------------- O
+O Contacts:                                                         O
+O                                                                   O
+O Garry Feed    (216)-476-2496        (Gerald_Freed@hotmail.com)    O
+O Bob Kaplow    (   )-   -            (robert_kaplow@hccompare.com) O
+O Brieffer      (800)-992-7433        (                           ) O
+O                                                                   O
+OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
+
+>
+>I checked my rocket out using an old scale but it should still be 
+>close to the actual weight.
+>
+>The rocket, batteries, transmitters, power regulator, parashoots,
+>and 3 E9 engines, weighs 2pounds, 8onzes.
+>
+>Going by the charts provided with the engines,
+>-Pounds / sec = 28.88
+>-Newtons / sec = 120
+>-E9 burn time = 2.8sec
+>-Average thrust pounds = 10.31
+>-Average thrust newtons = 42.86
+>-propellant wieght = 107.40g    (0.23pounds)
+>
+>All three motors will light at the same time. (to work as a cluster 
+>engine) At 0.30 seconds the engines will reach 24 newtons (5.38 pounds).
+>That would leave a positive force of 3.30 pounds, that should equal 1.58
+>G's.
+>
+>*note all of the data was based on data that is acurate within +or- 10%.

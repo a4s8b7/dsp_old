@@ -1,0 +1,36 @@
+To compile with mingw, g++, or icc:
+
+1) Go to http://easybmp.sourceforge.net/download.html and download the 
+   most recent version of EasyBMP.
+
+2) Extract the contents of EasyBMP_#.##.zip (where #.## is the version 
+   number) into the source directory. Take care not to overwrite the 
+   supplied makefile!
+
+3) Type "make" without the quotes. That's it!
+
+To compile with Microsoft Visual Studio:
+
+1) Go to http://easybmp.sourceforge.net/download.html and download the 
+   most recent version of EasyBMP.
+
+2) Extract the contents of EasyBMP_#.##.zip (where #.## is the version 
+   number) into the source directory. 
+
+3) Open Visual Studio, and create a new, empty win32 console  
+   application. 
+
+4) In the "Solution Explorer" panel, right-click on the "Source Files" 
+   icon, choose "Add," then "Existing item..."
+
+5) Browse to the source directory, and select both EasyBMP.cpp and 
+   EasyBMPtoAVI.cpp.
+
+6) In the "Solution Explorer" panel, right-click on the "Header Files" 
+   icon, choose "Add," then "Existing item..." 
+   (This step is unnecessary in VS 2005)
+
+7) Browse to the source directory, and select all the EasyBMP*.h 
+   files. (This step is unnecessary in VS 2005.)
+
+8) Build the project.

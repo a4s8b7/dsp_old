@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>Dungeon Studios GREAT TRAIN NETWORK (GTN) Project</title>
+</head>
+<body background="http://www.akroncdnr.com/ph/users/a4s8b7/msback.jpg" bgcolor="#000000" link="#00ff00" text="#FFFF66" vlink="#0000ff"><b>
+
+<CENTER><IMG SRC="http://koopa.oh2600.com/~calvinthedestroyer/gtn-ge-header.jpg"></CENTER>
+<BR>
+
+<table>
+<tr><td colspan=2 BACKGROUND="http://www.dsprototyping.com/bands/u-yellow.jpg"><p>
+<h2>The Great Train Network</h2><br>
+<br>
+This is a newtwork that uses trains with gondollias to send information from one computer 
+to another. Its easy to see how it works when you think of each train as a packet. The 
+gondollas hold the informtion witch is represented by marbles. A marble present = a 
+digital one, no marble present = a digital zero. A loading and unloading station is 
+used at each computer to load and unload "read and write" to each train "packet".
+</p>
+</td></tr>
+
+<tr><td>
+<table>
+<tr><td><a href="Gondola001.jpg"><img src="tGondola001.jpg" height=200 width=300 alt='^'></a></td>
+<td>#1 This pictue shows the Gondola in a dump position, you can also see a marble as it rolls down the shoot. </td></tr>
+
+<tr><td><a href="Gondola002.jpg"><img src="tGondola002.jpg" height=200 width=300 alt='^'></a></td>
+<td>#2 This shot shows how the soliniods for the marble loading are positioned. The soliniods are connected to gates that are made from wire.</td></tr>
+
+<tr><td><a href="Gondola003.jpg"><img src="tGondola003.jpg" height=200 width=300 alt='^'></a></td>
+<td>#3 The gates only let ONE marble drop at a time. as the soliniod lifts up the gate, one pole moves up to block the #2 marble while another pole moves up to release the #1 marble. </td></tr>
+
+<tr><td><a href="Gondola004.jpg"><img src="tGondola004.jpg" height=200 width=300 alt='^'></a></td>
+<td>#4 In this photo we can see the latch for dumping the gondola. at the time of this picture the lever is still being worked on.</td></tr>
+
+<tr><td><a href="Gondola005.jpg"><img src="tGondola005.jpg" height=200 width=300 alt='^'></a></td>
+<td>#5 Gondola 2.0, This gondola is made from copper sheeting. the sheet is coated. I found this materal for a real good price so thats what most of the gondolas are made from. </td></tr>
+
+<tr><td><a href="Gondola006.jpg"><img src="tGondola006.jpg" height=200 width=300 alt='^'></a></td>
+<td>#6 Here we see the Dump section of the loading/un-loading station. That finger is postions right over the switch that gets triggered when a marble dumps out of the gondola. </td></tr>
+
+<tr><td><a href="Gondola007.jpg"><img src="tGondola007.jpg" height=200 width=300 alt='^'></a></td>
+<td>#7 Now the finger is pressing down on the switch, activating it. Note how there is a whole in the train track to allow for the marbles to fall through.  </td></tr>
+
+<tr><td><a href="Gondola008.jpg"><img src="tGondola008.jpg" height=200 width=300 alt='^'></a></td>
+<td>#8 This is STEP 1 of the gate's loading process, We are using blue marbles B/C they are easyer to see. </td></tr>
+
+<tr><td><a href="Gondola009.jpg"><img src="tGondola009.jpg" height=200 width=300 alt='^'></a></td>
+<td>#9 This is STEP 2 of the gate's loading process, Here you can see that the gate has lifted and the first marble has fallen into the gondola. You can see that the next marble has not fallen because of a pole that has moved up from underneath.</td></tr>
+
+<tr><td><a href="Gondola010.jpg"><img src="tGondola010.jpg" height=200 width=300 alt='^'></a></td>
+<td>#10 This is STEP 3 of the gate's loading process, Now the gate has moved down, and the second marble has moved forward into the #1 spot. This makes it so that every time the gate moves up and down, One marble will drop into the gondola.</td></tr>
+
+<tr><td><a href="http://www.akroncdnr.com/ph/users/a4s8b7/P0006804.JPG"><img src="http://www.akroncdnr.com/ph/users/a4s8b7/tP0006804.jpg" height=200 width=300 alt='^'></a></td>
+<td>#11 This is version one of the gondola. (notice all the scrap brass) </td></tr>
+
+<tr><td><a href="GTN-test-setup.jpg"><img src="tGTN-test-setup.jpg" height=200 width=300 alt='^'></a></td>
+<td>#12 This is a picture of the communication track section. The tracks are not nailed down, this is just to check for clearance. The wooden pegs will be used to join the sections together. </td></tr>
+
+<tr><td><a href="GTN-ccircuit.jpg"><img src="tGTN-circuit.jpg" height=200 width=300 alt='^'></a></td>
+<td>#13 This circuit board (one of two) is used to control relays that  in turn control the loading station. This board connects to the PC's parrallel port.Its not a true Bi-directional parrallel port. It uses a buffer for the inputs. For instance, the "printer is out of paper" status bit is wired to the "train ready to unload" signal. A speacial thanks goes out to Tomi Engdahl's <a href="http://www.epanorama.net/circuits/parallel_output.html">Parallel port output</a> page, Craig Peacock's <href="http://www.beyondlogic.org/spp/parallel.htm">Beyond Logic</a> page.</td></tr>
+
+<tr><td><a href="GTN-buffer.jpg"><img src="tGTN-buffer.jpg" height=200 width=300 alt='^'></a></td>
+<td>#14 This is the buffer station, it still has some work. what it does is provide a station for holding empty trians. Using ladder logic the trains are parked on the differnt sections of track. When the PC needs an emty trian, the ladder logic decides which train to activate. The ladder logic works just like a Stack (push in, pop out) </td></tr>
+
+<tr><td><a href="ge_es44ac_demostrator.jpg"><img src="tge-es44ac-demo.jpg" height=200 width=300 alt='^'></a></td>
+<td>#15 Now this is the kind of train engine that I wanted to use for my network. The GE ES44AC Demonstrator #2005 (DC). You can read more about it at <a href="http://www.tower55products.com/showroom.php#">Tower 55's GE ES44AC</a>. Or you can go to GE sight and read about the auctual engine, GE Evolution Series Locomotives <a href="http://www.ge.com/stories/en/13131.html">www.GE.com.</a> Since the engines I want are very exspensive and more for show than use, I decided to re paint some cheeper train engines to make them look like GE Evalations. Here they are with a base coat, <a href="ge-trains-basecoat.jpg">Life Like Engine with base coat.</a>
+</table>
+</td><td>
+
+<img src="gtn-diagram.jpg" alt='great train network in HO scale model'>
+
+</td></tr>
+</table>
+<hr><br>
+<a href="GE-ES44AC-Demostrator2.JPG">Completed GE tarin engine</a> <a href="http://www.akroncdnr.com/">Akron computer design and repair</a> <a href="http://www.dsprototyping.com"/>Dungeon Studios Prototyping</a><br>

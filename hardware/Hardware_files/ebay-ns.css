@@ -1,0 +1,18 @@
+h1,.pagetitle,.ebay h1{font-family:Arial,Helvetica,sans-serif;font-size:large;font-weight:bold;}
+h2,.sectiontitle,.ebay h2{font-family:Arial,Helvetica,sans-serif;font-size:medium;font-weight:bold;}
+h3,th,.standardtitle,.ebay h3,.ebay th{font-family:Arial,Helvetica,sans-serif;font-size:small;font-weight:bold;}
+body,td,p,div,span,ul,ol,dl,.standard,.ebay body,.ebay td,.ebay p,.ebay div,.ebay span,.ebay ul,.ebay ol,.ebay dl,.ebay .standard{font-family:Arial,Helvetica,sans-serif;font-size:small;}
+.emphasized{font-family:Arial,Helvetica,sans-serif;font-size:small;color:#009900;font-weight:bold;}
+.error{font-family:Arial,Helvetica,sans-serif;font-size:small;color:#FF0000;}
+.help{font-family:Arial,Helvetica,sans-serif;font-size:small;color:#666666;}
+.navigation{font-family:Verdana,Arial,Helvetica,sans-serif;font-size:x-small;}
+a:active{color:#0000CC;}
+a:link,.novisited a:visited{color:#0000CC;}
+a:visited{color:#990099;}
+.pipe{color:#9999FF;}/*in text menu*/
+.textbox{font-family:Verdana,Arial,Helvetica,sans-serif;font-size:x-small;color:#000000;}
+.textboxhelp{font-family:Verdana,Arial,Helvetica,sans-serif;font-size:x-small;color:#666666;}
+.button{font-family:Verdana,Arial,Helvetica,sans-serif;font-size:x-small;}
+pre{font-family:"Courier New",Courier,monospace;font-size:small;}
+.nomargin{margin:0px;}
+.override,.override td,.override th,.override body{font-family:serif;font-size:medium;}/*depricated*/

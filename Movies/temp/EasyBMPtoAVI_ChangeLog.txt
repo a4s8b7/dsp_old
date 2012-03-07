@@ -1,0 +1,173 @@
+EasyBMPtoAVI Movie Creator: Change Log 
+
+Library Author(s): Paul Macklin 
+  Library License: BSD (revised). See the 
+                   BSD_(revised)_license.txt 
+                   file for further information.
+        Copyright: 2006 by the EasyBMPtoAVI Project 
+            Email: macklin01@users.sourceforge.net
+          Support: http://EasyBMPtoAVI.sourceforge.net
+
+All changes by Paul Macklin unless otherwise noted.
+
+*--------------------------------------------------------*
+Date: 5-19-2006
+Changes from 0.50 to 0.50:                                
+    Initial release. Supports writing a series of BMP 
+    image files (at any bit depth) to an AVI movie file.
+    Tested on g++, Intel's icc, mingw, Borland 5.0, and MS
+    Visual Studio 2005. 
+    
+    Big-endian (e.g., PowerPC) currently unsupported, but
+    will be soon.
+    
+    Help function incomplete, but coming soon. 
+
+*--------------------------------------------------------*
+Date: 5-21-2006
+Changes from 0.50 to 0.51:
+    Improved aesthetics of initial title screen.
+
+    Fixed the suggested buffer size in strh and avih to 
+    the proper size, so that an entire frame is included 
+    in the buffer (including the padding to make rows 
+    align on 4 byte boundaries). This will improve video 
+    playback performance, especially on large AVI output 
+    files. 
+    
+    Set dwMaxBytesPerSecond in avih to zero to improve 
+    video playback performance on output AVI files. Evi-
+    dently, everybody does this. 
+
+    Removed a stupid comment (originated from Daily Show) 
+    in the HandleFlag() function.
+    
+    Added support for setting copyright bit. This is prob-
+    ably useless, but may not hurt for those distributing
+    AVI files over the net. 
+    
+    Fixed bugs in writing the strh where the width and 
+    height weren't properly noted in the data structure. 
+    This was the last warning given by AVIMaster.
+    
+    Added WriteWORD() function to write the occasional 
+    WORD, particularly in the strh data structure. 
+    
+    Filled in the DisplayHelp() function, which is acti-
+    vated by the -help flag.
+    
+*--------------------------------------------------------*
+Date: 5-24-2006
+Changes from 0.51 to 0.52:    
+    Added functions WriteBufferToFile() and 
+    ReadFileToBuffer() for better disk access performance.
+    These may be used more in the future. 
+    
+    Added function InvertBufferOrder() to reverse the byte
+    order of any multi-byte data structure. We may use 
+    this for big-endian support, but it's currently not 
+    needed. 
+
+    Rewrote WriteWORD() to be endian-safe.
+    
+    Rewrote WriteDWORD() to be endian-safe.
+
+    Verified that WriteString() is endian-safe.
+    
+    Rewrote WriteChunk() to be endian-safe. Currently, 
+    this function is not used. 
+    
+    Removed the MainAVIHeader data structure, since it 
+    didn't cooperate well with easy byte reversal. (Needed
+    to do it in chunks of 4 bytes, and was more trouble 
+    than it's worth.)
+    
+    Added WriteAVIH() and WriteBMIH() functions that are 
+    endian-safe and neater. 
+    
+    Double-checked that WriteSTRH() is endian-safe. 
+    
+    Cleaned up WriteFrame() and made sure it is endian-
+    safe.
+
+    Verified that new version of EasyBMPtoAVI is endian-
+    safe on Sun Sparc4 machine running Solaris. 
+    
+    Added function DetermineFrameDataSize() to automate 
+    finding the size of a single data frame (biSizeImage),
+    which is used several times in the program. 
+    
+    Added check of the maximum file size, with an error 
+    message if above 2 GB and program termination. 
+    
+    Added a check to see if the output file file could be 
+    opened for reading. An error message is generated if 
+    not, with program termination. 
+    
+    Cleaned up message that indicates when the copyright 
+    bit will be set.
+
+    Added sample CFLAGS option to makefile for compling 
+    with Intel's icc on a pentium 4. 
+
+    Added further clarifications to the makefile 
+
+*--------------------------------------------------------*
+Date: 5-31-2006
+Changes from 0.52 to 0.53:    
+    Made EasyBMPtoAVI compatible with EasyBMP version 1.02
+    and up.
+    
+    Added macros to continue compatibility with earlier 
+    versions of EasyBMP.
+
+    Compiling with EasyBMP 1.02 or later should ensure im-
+    proved performance (buffered reading of BMP images), 
+    as well as better compatibility with 64-bit machines. 
+
+*--------------------------------------------------------*
+Date: 8-10-2006
+Changes from 0.53 to 0.54:
+    Changed code to allow for non-integral framerates 
+    (e.g., 29.97).
+    
+    Added new "smooth" flag that (temporaly) smooths the 
+    output by interpolating frames. A smoothing factor of
+    N multiplies the framerate by a factor of N, i.e., in-
+    serts (N-1) interpolated frames between every two or-
+    iginal frames. 
+    
+    Introduced an experimental function to interleave 
+    frames rather than interpolate them. This should be 
+    faster than interpolation. You can invoke this option
+    with the "interleave" flag. 
+
+    Did some code cleanup. 
+    
+    Updated the help function. 
+    
+    Fixed the bug where the first and last frame numbers 
+    were displayed in the option summary when in fact a 
+    file list was used. 
+
+    Added copyright bit, smoothing factor, and interleave
+    options to the option summary display at the start of
+    the program.
+    
+*--------------------------------------------------------*
+Date: 11-12-2006
+Changes from 0.54 to 0.55:
+    Updated to make use of EasyBMP Version 1.05.
+    
+    Added new flag (-increment N) to allow the filenames 
+    to increment by N, rather than 1.
+    
+    Added new flag (-rescale <mode><size>) to rescale the 
+    input images as below:
+-rescale p300   Rescales images to 300% of original size
+-rescale w300   Rescales proportionally to new width 300
+-rescale h300   Rescales proportionally to new height 300
+-rescale f300   Rescales to fit inside a 300 x 300 square.
+
+    Changed the makefile to better handle optimizations.
+

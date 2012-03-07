@@ -1,0 +1,203 @@
+<!DOCTYPE HTML>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+	<title>Dungeon Studios Movie test</title>
+	<style type="text/css">
+		.MovieList
+		{
+			position:absolute;
+			top:154px;
+			left:610px;
+			width:200px;
+		}
+	</style>
+</head><body>
+
+<center>
+<table border="2">
+	<tr>
+		<td>
+			<iframe id="main_image" width='400' height='350' src='http://www.youtube.com/embed/JPLKFxN9SIs' frameborder='0' allowfullscreen></iframe>
+			
+		</td>
+		<td>
+			<div id="MovieList" style="overflow:auto; height:600px; width:300px; overflow:scroll; border:1px solid #0ADA0A;"></div>
+		</td>
+	</tr>
+</table>
+</center>
+
+
+</body></html>
+
+<SCRIPT language="JavaScript">
+
+var slidewidth="100px"
+var slideheight="100px"
+var slidebgcolor='black'
+
+var Movies=new Array ()
+Movies[0]=['M-106-1','http://youtu.be/BpEoq3QLP2c','elmo-3.jpg','Elmo Turns 21']
+Movies[1]=['M-106-1','http://youtu.be/BpEoq3QLP2c','elmo-3.jpg','Elmo Turns 21']
+Movies[2]=['M-666-1','http://youtu.be/A8ZxErq70sA','666.jpg','Lucifer Rising']
+Movies[3]=['M-700-2','http://youtu.be/ln26bf4Zh0k','lego-s-5.jpg','The Lost Island of Abodabodaboda (Lego Soras)']
+Movies[4]=['M-004-1','http://youtu.be/yw8I-Pvt1MU','real.jpg','Tree Fort']
+Movies[5]=['M-004-1','http://youtu.be/45km7eE9sQ0','real.jpg','No life gaurd on duty']
+Movies[6]=['M-680-1','http://youtu.be/1o7QopJt-q0','mm-1.jpg','Misery Machine (Baned in Bloomville)Mach 30th 1997']
+Movies[7]=['M-011-0','http://youtu.be/JAWYdaGs_58','ssp-1.jpg','Space Station Altar (SSP)']
+Movies[8]=['M-100-1','http://youtu.be/CKCT2fSPpXs','td-03.jpg','Technical Dificult (Gores Show)']
+Movies[9]=['M-106-2','http://youtu.be/DNKgZGTZbLg','info-5.jpg','DR. Science (episodes 1 to 8)']
+Movies[10]=['M-106-4','http://youtu.be/DNKgZGTZbLg','info-5.jpg','Mad DR. Science']
+Movies[11]=['M-001-1','http://youtu.be/DNKgZGTZbLg','magic-3.jpg','Magic Show!']
+Movies[12]=['M-004-1','http://youtu.be/Z9Cwwv6A8uw','real.jpg','Rockets']
+Movies[13]=['M-004-1','http://youtu.be/1l3hS2nJdvQ','real.jpg','AquaOptics Virtual Prototype']
+Movies[14]=['M-004-1','http://youtu.be/zJSk1K1R470','real.jpg','Tiny DC generator']
+Movies[15]=['M-004-1','http://youtu.be/2lHZc4BN3Ik','real.jpg','testing of an old TMH Tyco RC car Battery for potential buyers on EBay']
+Movies[16]=['M-004-1','http://youtu.be/3D3c4BJ-rMY','real.jpg',', Intel comercial']
+Movies[17]=['M-004-1','http://youtu.be/CKxOnqQ1BdQ','real.jpg','Eds band 01']
+Movies[18]=['M-200-1','http://youtu.be/ln6h2IwMBk8','sbc-log.jpg','Starball 01 Anti fourth of July concert 1997']
+Movies[19]=['M-200-1','http://youtu.be/g3P6V0O7QAg','sbc-log.jpg','Starball 02 Anti fourth of July concert 1997']
+Movies[20]=['M-200-1','http://youtu.be/WyWR9GJbSl0','sbc-log.jpg','Starball 03 Anti fourth of July concert 1997']
+Movies[21]=['M-200-1','http://youtu.be/eXeLd8uyjb4','sbc-log.jpg','Starball 04 Anti fourth of July concert 1997']
+Movies[22]=['M-200-1','http://youtu.be/UFrqcUtoF_k','sbc-log.jpg','Starball 05 Anti fourth of July concert 1997']
+Movies[23]=['M-200-1','http://youtu.be/-4XtptTPSoo','sbc-log.jpg','Starball 06 Anti fourth of July concert 1997']
+Movies[24]=['M-200-1','http://youtu.be/H3L5ThK-VTM','sbc-log.jpg','Starball 07 Anti fourth of July concert 1997']
+Movies[25]=['M-200-1','http://youtu.be/NzDcYmu9pQ8','sbc-log.jpg','Starball 08 Anti fourth of July concert 1997']
+Movies[25]=['M-004-1','http://youtu.be/qRlb-PBTRqE','real.jpg','Rocking on the River']
+Movies[26]=['M-004-1','http://youtu.be/DPqtBxjl4w4','real.jpg','Almost queen at Rocking on the River']
+Movies[27]=['M-004-1','http://youtu.be/wC8PNM8JusQ','real.jpg','Drenalin 1']
+Movies[28]=['M-004-1','http://youtu.be/yPi2C_U7r8s','real.jpg','Drenalin 2']
+Movies[29]=['M-004-1','http://youtu.be/MHgGsC-NXlo','real.jpg','Drenalin 5']
+Movies[30]=['M-004-1','http://youtu.be/EmL3BDfVlRc','real.jpg','Drenalin 4']
+Movies[31]=['M-200-1','http://youtu.be/jwyT8EYpAs4','mm-1.jpg','Misery Machine Presskit tape onscabbed knees']
+Movies[32]=['M-300-1','http://youtu.be/92UWnpvQKl8','mm-1.jpg','Misery Machine Presskit tape not your superman']
+Movies[33]=['M-487-1','http://youtu.be/85RPgTriDRo','real.jpg','This movie is blank']
+Movies[34]=['M-300-1','http://youtu.be/7nrGHcWdonE','mm-1.jpg','Misery Machine Presskit tape all I see']
+Movies[35]=['M-004-1','http://youtu.be/85RPgTriDRo','real.jpg','Misery Machine concert itteruption'] 
+Movies[36]=['M-004-1','http://youtu.be/7huJt3oHdz8','real.jpg','fun da noodle fights']
+Movies[37]=['M-004-1','http://youtu.be/7Wkt46_H1hs','real.jpg','basketball game between Joel, Gore, Andy and Ed']
+Movies[38]=['M-004-1','http://youtu.be/sMkqtHFw3Rc','real.jpg','Joels graduation BOOM!']
+Movies[39]=['M-004-1','http://youtu.be/ytTnrpwSego','real.jpg','Fish and Koi']
+Movies[40]=['M-004-1','http://youtu.be/H5FdXOJloeo','real.jpg','Wild Akron raccoons in my attic']
+Movies[41]=['M-004-1','http://youtu.be/jwEuKifmuHU','real.jpg','Baby Robins']
+Movies[42]=['M-004-1','http://youtu.be/MUjgPMMBK34','real.jpg','Baby Robins nest']
+Movies[43]=['M-001-2','http://youtu.be/EUZcdHyHRDQ','falls_river.jpg','Cyahogafalls River during high water and flooding']
+Movies[44]=['M-004-1','http://youtu.be/_P9degvho3s','real.jpg','Blisters from the effects of posion sumac']
+Movies[45]=['M-001-1','http://youtu.be/JPLKFxN9SIs','zoracks_new_colar.jpg','Zoracks new colar']
+Movies[46]=['M-004-1','http://youtu.be/m21jfHBmgMU','real.jpg','Fish']
+Movies[47]=['M-004-1','http://youtu.be/KINKsZOoxG4','real.jpg','Euroviagens 01']
+Movies[48]=['M-004-1','http://youtu.be/8s0_bdpnsWs','real.jpg','Euroviagens 02']
+Movies[49]=['M-004-1','http://youtu.be/zQOVecihASY','real.jpg','Euroviagens 03']
+Movies[50]=['M-004-1','http://youtu.be/dJX9TWfND4Q','real.jpg','Johns race car']
+Movies[51]=['M-003-1','http://youtu.be/MHqCtOxn6ag','carter_70452131.jpg','carter 70452131 4 barrel carburator fix and repair']
+Movies[52]=['M-004-1','http://youtu.be/osGkDS4WGfk','real.jpg','LEGO Clock Face with Three Hands']
+Movies[53]=['M-004-1','http://youtu.be/cYC7s3iNu2U','real.jpg','LEGO Clock']
+Movies[54]=['M-004-1','http://youtu.be/IWstnT6-VNI','real.jpg','LEGO auto matic transmission']
+Movies[55]=['M-004-1','http://youtu.be/m0rqha-CdeQ','real.jpg','LEGO G Scale LGB Steam Locomotive']
+Movies[56]=['M-004-1','http://youtu.be/2fjLEkuvSsA','real.jpg','1/24 scale LEGO slot car crashes']
+Movies[57]=['M-004-1','http://youtu.be/5u3XCU3yqGc','real.jpg','Notacon convention 1']
+Movies[58]=['M-004-1','http://youtu.be/bA3S_tGCJVU','real.jpg','Notacon convention 2']
+Movies[59]=['M-004-1','http://youtu.be/0LAgOfA1bwg','real.jpg','Notacon convention 3']
+Movies[60]=['M-004-1','http://youtu.be/3kqLsITob90','real.jpg','Notacon convention 4']
+Movies[61]=['M-004-1','http://youtu.be/o339ZctiZuk','real.jpg','Notacon convention 5']
+Movies[62]=['M-004-1','http://youtu.be/v4msp8SFl_k','real.jpg','Notacon cannon bruce attacked']
+Movies[63]=['M-004-1','http://youtu.be/y8EWw2dMbN8','real.jpg','Notacon 6 - Explore the depth of your world 2-6']
+Movies[64]=['M-004-1','http://youtu.be/H8U616-hgN4','real.jpg','Notacon 6 - Explore the depth of your world 3-6']
+Movies[65]=['M-004-1','http://youtu.be/76bvSwsT4_U','real.jpg','Notacon 6 - Explore the depth of your world 4-6']
+Movies[66]=['M-004-1','http://youtu.be/7YVsyaUOkHM','real.jpg','Notacon 6 - Explore the depth of your world 5-6']
+Movies[67]=['M-004-1','http://youtu.be/iZhOhOOdlTQ','real.jpg','Notacon cannon (low res)']
+Movies[68]=['M-004-1','http://youtu.be/jC80KpgJXwI','real.jpg','Notacon RF ID Anything But Ethernet entry (ABE)']
+Movies[69]=['M-004-1','http://youtu.be/9wuI1-9js_c','real.jpg','Notacon Anything But Ethernet Billy Bass network']
+Movies[70]=['M-004-1','http://youtu.be/uFVN1Sd6Eno','real.jpg','State race 5']
+Movies[71]=['M-004-1','http://youtu.be/4Dz-6pGcWik','real.jpg','State race 4']
+Movies[72]=['M-004-1','http://youtu.be/jmS3kRcVbS8','real.jpg','State race 3']
+Movies[73]=['M-004-1','http://youtu.be/Ruedylva8t4','real.jpg','State race 2']
+Movies[74]=['M-004-1','http://youtu.be/RybqLXeFeP0','real.jpg','State race 1']
+Movies[75]=['M-004-1','http://youtu.be/Q4D-4v5EL94','real.jpg','Ho Slot car state race dayton']
+Movies[76]=['M-004-1','http://youtu.be/m21jfHBmgMU','real.jpg','Dads 350 V8 engine testing']
+Movies[77]=['M-004-1','http://youtu.be/qV30gCmInQI','real.jpg','2009 loweds track']
+Movies[78]=['M-004-1','http://youtu.be/vNWwU7kgBdw','real.jpg','Slot Car Racing at Bristiville Center Raceway']
+Movies[79]=['M-004-1','http://youtu.be/aZvUINB6JaM','real.jpg','BCR retro slot car race']
+Movies[80]=['M-004-1','http://youtu.be/0biTiCn8Xes','real.jpg','HO Scale Slot Car race']
+Movies[81]=['M-004-1','http://youtu.be/sozkUslwP8o','real.jpg','Mike shanks 6 lane HO slot car track 2']
+Movies[82]=['M-004-1','http://youtu.be/mP0FIgoRIBY','real.jpg','Mike shanks 6 lane HO slot car track 1']
+Movies[83]=['M-004-1','http://youtu.be/46VyFPPViqI','real.jpg','Goerges apollo HO slot car track 2']
+Movies[84]=['M-004-1','http://youtu.be/sNGHwZBAZ_0','real.jpg','Goerges apollo HO slot car track 1']
+Movies[85]=['M-004-1','http://youtu.be/Qa-FJE7IpzM','real.jpg','RT93 ho slotcar track']
+Movies[86]=['M-004-1','http://youtu.be/2BWs5_RqvNw','real.jpg','Fast max track slotcars']
+Movies[87]=['M-004-1','http://youtu.be/ReNFa5fEaxQ','real.jpg','RT93 Raceways scale oval track']
+Movies[88]=['M-004-1','http://youtu.be/1cSVscYd3TQ','real.jpg','North American Model Engineering Society 2008 #1']
+Movies[89]=['M-004-1','http://youtu.be/vQe100SA2kc','real.jpg','North American Model Engineering Society 2008 #2']
+Movies[90]=['M-004-1','http://youtu.be/F_qfbfS1qss','real.jpg','North American Model Engineering Society 2008 #3']
+Movies[91]=['M-004-1','http://youtu.be/PIbmSGEbiQ8','real.jpg','mini king test ho slot car track']
+Movies[92]=['M-004-1','http://youtu.be/GwkfecgQ0dU','real.jpg','fountain end table plant']
+Movies[93]=['M-004-1','http://youtu.be/aSxwLqd-iTM','real.jpg','HeroScape playing field']
+Movies[94]=['M-004-1','http://youtu.be/6ZkS7T5BhPQ','real.jpg','American Flyer diesel train atic run']
+Movies[95]=['M-004-1','http://youtu.be/b4wSeHmVfIc','real.jpg','American Flyer diesel ']
+Movies[96]=['M-004-1','http://youtu.be/V2VGGaAeOnY','real.jpg','Steam engine dukes of hazard style ']
+Movies[97]=['M-004-1','http://youtu.be/Rsn3Cd6udH8','real.jpg','steam engines first run'] 
+Movies[98]=['M-004-1','http://youtu.be/FOL_IibZoSI','real.jpg','restoration of an old steam engine']
+Movies[99]=['M-004-1','http://youtu.be/JhZ59egGhTc','real.jpg','s scale train drive by']
+Movies[100]=['M-004-1','http://youtu.be/NfJTkg5S1m0','real.jpg','American Flyer diesel Engine']
+Movies[101]=['M-004-1','http://youtu.be/UDzoQwczfN8','real.jpg','American Flyer #320 steam engine pulling a full load']
+Movies[102]=['M-004-1','http://youtu.be/3Cs8Pxdlsv8','real.jpg','American Flyer streamline diesel pulling a full load']
+Movies[103]=['M-004-1','http://youtu.be/DNKgZGTZbLg','real.jpg','Ho scale steam engine']
+Movies[104]=['M-200-1','http://youtu.be/OUN7bj1mW4A','info-5.jpg','Andys Trick']
+Movies[105]=['M-200-1','http://youtu.be/KPVxe3a4Aco','info-5.jpg','Come On']
+Movies[106]=['M-004-1','http://youtu.be/FHHnU2ZDXPU','real.jpg','power house robbed']
+
+
+	function enlargeImage()
+	{
+	  document.images["jsbutton"].src= upImage.src;
+	  return true;
+	}
+	function reduceImage() 
+	{
+	   document.images["jsbutton"].src = normalImage.src;
+	   return true;
+	}
+	function handleMDown(new_url)
+	{
+		document.getElementById("main_image").src = new_url; 
+		return true;
+	}
+	function handleMUp()
+	{
+		changeImage();
+		return true;
+	}
+
+var MovieList='<table>';
+	var movctr = 1;
+	for (movctr=1;movctr<Movies.length;movctr++)
+		{
+			MovieList+='<tr><td><img src="';
+			MovieList+= Movies[movctr][2];
+			MovieList+='" width="100" height="100" name="Movielist';
+			MovieList+=movctr;
+			MovieList+='"; ';
+			MovieList+=' onmouseover="Movielist';
+			MovieList+=movctr;
+			MovieList+='.width=\'105\'";';
+			MovieList+=' onmouseout="Movielist';
+			MovieList+=movctr;
+			MovieList+='.width=\'100\'";';
+			MovieList+=' onMouseDown="return handleMDown(\'';
+			MovieList+=Movies[movctr][1];
+			MovieList+='\')" /></a></td><td>';
+			MovieList+=Movies[movctr][3];
+			MovieList+=' ';
+			MovieList+=Movies[movctr][0];
+			MovieList+='</td></tr>';
+		}
+	MovieList+='</table>';
+	document.write('<div id="MovieList" style="width:'+slidewidth+';height:'+slideheight+'; background-color:'+slidebgcolor+'"></div>');
+
+	window.onload = function() 
+		{
+	    	document.getElementById("MovieList").innerHTML = MovieList;
+		};
+		
+</SCRIPT>
+<!-- <div id="MovieList" style="width: 200px; height: 100px; background-color: black;"></div> -->

@@ -1,0 +1,47 @@
+[Sun Feb 11 16:29:51 2007] [error] [client 86.149.104.92] File does not exist: /usr/local/www/data/ds/Movies/PAPPER.jpg, referer: http://www.dsprototyping.com/Movies/A4-M6.HTM
+
+
+[Tue Nov 24 17:38:01 2010] [error] [client 66.93.12.164] File does not exist: /var/www/html/ds/projects/AF-trains/gfx, referer: http://www.dsprototyping.com/projects/AF-trains/AF-trains-new.html
+
+[Thu May 26 02:00:25 2011] [error] [client 122.174.46.103] (13)Permission denied: access to /projects/AF-trains/tracks.jpg denied
+
+
+[Fri May 27 10:40:13 2011] [error] [client 208.115.111.66] File does not exist: /usr/local/www/data/ds/projects/A4-auto_files/79gmc/79gmc.htm
+
+[Sat May 28 00:22:06 2011] [error] [client 71.72.16.117] File does not exist: /usr/local/www/data/ds/webalizer/msfree.png, referer: http://www.dsprototyping.com//webalizer/index.html
+
+[Sat May 28 01:16:22 2011] [error] [client 189.216.142.43] File does not exist: /usr/local/www/data/ds/projects/A4-auto_files/84fiero/t84fiero08.jpg, referer: http://www.dsprototyping.com/projects/A4-auto_files/84fiero/84Fiero.htm
+
+[Sat May 28 01:16:23 2011] [error] [client 189.216.142.43] File does not exist: /usr/local/www/data/ds/projects/A4-auto_files/84fiero/t84fiero09.jpg, referer: http://www.dsprototyping.com/projects/A4-auto_files/84fiero/84Fiero.htm
+
+[Sat May 28 01:16:23 2011] [error] [client 189.216.142.43] File does not exist: /usr/local/www/data/ds/projects/A4-auto_files/84fiero/t84fiero10.jpg, referer: http://www.dsprototyping.com/projects/A4-auto_files/84fiero/84Fiero.htm
+
+[Sat May 28 09:50:32 2011] [error] [client 208.115.111.66] File does not exist: /usr/local/www/data/ds/data/'+DSPaddsCopy[currentslide][1]+'
+
+[Sun May 29 01:45:42 2011] [error] [client 98.215.230.98] (13)Permission denied: access to /projects/AF-trains/AF-freight-716-1sm.jpg denied, referer: http://www.dsprototyping.com/forsale/forsale.htm
+
+
+
+
+[Mon May 30 01:16:39 2011] [error] [client 122.168.123.181] File does not exist: /usr/local/www/data/ds/projects/papper.jpg, referer: http://www.dsprototyping.com/projects/A4-FLY.HTM
+
+
+[Mon May 30 21:47:40 2011] [error] [client 72.227.68.171] File does not exist: /usr/local/www/data/ds/info/url(res:, referer: http://www.dsprototyping.com/info/A4-INFO.HTM
+
+[Tue May 31 11:48:41 2011] [error] [client 66.249.71.132] File does not exist: /usr/local/www/data/ds/projects/Slot-cars/slottrak.htm
+
+[Wed Jun 01 05:36:46 2011] [error] [client 67.195.114.230] File does not exist: /usr/local/www/data/ds/wanted/A4S8B7@WOH.RR.com
+
+[Wed Jun 01 18:45:01 2011] [error] [client 71.72.16.117] (13)Permission denied: access to /projects/AF-trains/AF-freight-716-1sm.jpg denied, referer: http://www.dsprototyping.com/forsale/forsale.htm
+
+[Wed Jun 01 18:45:01 2011] [error] [client 71.72.16.117] File does not exist: /usr/local/www/data/ds/forbidden.html, referer: http://www.dsprototyping.com/forsale/forsale.htm
+
+[Fri Jun 03 10:38:32 2011] [error] [client 195.145.22.46] File does not exist: /usr/local/www/data/ds/info/Scams.HTM
+
+[Fri Jun 03 10:38:43 2011] [error] [client 213.0.89.53] File does not exist: /usr/local/www/data/ds/info/Scams.HTM
+
+[Fri Jun 03 19:06:05 2011] [error] [client 69.178.173.195] File does not exist: /usr/local/www/data/ds/pond/purchase_pond.htm, referer: http://www.dsprototyping.com/pond/A4-pond.htm
+
+[Fri Jun 03 19:07:54 2011] [error] [client 150.70.64.195] File does not exist: /usr/local/www/data/ds/pond/purchase_pond.htm
+
+[Fri Jun 03 19:18:44 2011] [error] [client 66.249.71.213] File does not exist: /usr/local/www/data/ds/robots.txt

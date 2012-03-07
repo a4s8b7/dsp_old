@@ -1,0 +1,48 @@
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-7364299494566919";
+/* Resumes */
+google_ad_slot = "4153330078";
+google_ad_width = 120;
+google_ad_height = 600;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+
+
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-7364299494566919";
+/* Movie-Page */
+google_ad_slot = "9154823962";
+google_ad_width = 120;
+google_ad_height = 600;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-7364299494566919";
+/* Main-page-banner */
+google_ad_slot = "1369821998";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-7364299494566919";
+/* google-ads */
+google_ad_slot = "7958646595";
+google_ad_width = 120;
+google_ad_height = 600;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>

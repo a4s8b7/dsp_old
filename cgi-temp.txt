@@ -1,0 +1,4 @@
+<form method=post action=*page-cntr.exe*>
+<input type=text value="1">
+<input type=submit value=post>
+</form>

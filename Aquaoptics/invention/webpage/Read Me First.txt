@@ -1,0 +1,84 @@
+----------------------------------------------------------------------
+Illusive Design Free Web Templates
+Copyright (C) 1998-2002 by Wayne D Fields of Illusive Design.
+http://illusivedesign.cjb.net
+----------------------------------------------------------------------
+
+WELCOME
+----------------------------------------------------------------------
+Thanks for visiting Illusive Design and downloading one of our 
+templates. I hope you enjoy it.
+
+Wayne D. Fields
+						   
+For this template to work you have to place all the images in a 
+folder named images, and place this folder in the same directory as 
+.html file.
+
+I would Like to help everyone but I don't have the time so please 
+do not contact me for help configuring a template. I do offer my 
+services for a fee contact me using the contact form on my site to 
+inquire about pricing.
+
+If you would like to learn how to design visit the resources section 
+of my site there you'll find some sites that I learned from, as 
+well as tutorials.
+
+For those who didn't get this template from my site the site 
+URL is: http://illusivedesign.cjb.net
+----------------------------------------------------------------------
+
+LICENSE / TERMS OF USE
+----------------------------------------------------------------------
+Free templates are free only if some form of link or button linking 
+back to this site Illusive Design (http://illusivedesign.cjb.net) 
+is placed on the first page of the site. The templates may be used 
+for your own and/or your clients' web sites, but you may not put 
+them on a diskette, CD, web site or any other medium and offer them 
+for redistribution or resale. This means that if you are a web 
+developer and consultant you are free to use the templates in the design 
+of your site or a clients' web sites. However the templates may not 
+be resold in any sort of collection, such as distributing to a 
+third party via CD, diskette, or letting others download off your 
+web sites, etc without permission from Wayne D. Fields. 
+You may not edit the template and then sell it, in anyway. 
+In any way if you do not abide by these terms, 
+Illusive Design will prosecute to the highest extent possible.
+
+
+WARNING: 
+If you are to use our templates to design web sites for your 
+commercial clients, it is wise to advise your clients in advance 
+that your using pre-made templates for their projects in order to 
+avoid possible legal disputes with your clients.
+
+
+The templates are provided "as is" without warranty of any kind, 
+either expressed or implied. You are responsible for adding or 
+editing your web site's content (e.g. pictures, photos, and text) 
+to the template yourself. Technical support will be very limited 
+to problems such as graphics alignment and other difficulties 
+you might experience.
+
+
+You understand that Illusive Design is not responsible for the 
+content, quality or merchantability of any information, product 
+or service offered herein and the user must assume full 
+responsibility to evaluate independently the accuracy, completeness, 
+quality and usefulness of any information or other content. Illusive 
+Design hereby expressly disclaims any and all warranties, express 
+and implied, including but not limited to any warranties of 
+accuracy, reliability, merchantability or fitness for a particular 
+purpose by any vendor, customer, or associate offering information, 
+products, and services linked to Illusive Design web site. The user
+agrees that Illusive Design provider is not responsible, and shall 
+have no liability to such user, with respect to any information, 
+product or service offered by others who are linked to Illusive 
+Design web site. Illusive Design shall not be liable for any damages 
+allegedly sustained arising out of use of the information, products 
+and services.
+----------------------------------------------------------------------
+
+
+
+ 

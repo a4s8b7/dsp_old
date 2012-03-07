@@ -1,0 +1,192 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Dungeon Studios Prototyping</title>
+<style type="text/css">
+*{margin:0;padding:0}
+p{margin:0 0 .5em 0;padding:5px;position:relative;}/*opera 8 needs the position:relative on the inner content but opera 9 doesn't */
+body{text-align:center;background:#339900}
+
+.backgrond  
+	{
+	background-image: url(TOCAN6.JPG); background-repeat: repeat;
+	}
+
+.backgrondwrapper  
+	{
+	background-image: url(Dscard.jpg); background-repeat: repeat;
+	}
+
+#wrapper{
+	width:780px;
+	margin:0px auto;
+	padding:0;
+	text-align:left;
+ background:#EEEEEE;
+	border:7px solid #000;
+ border-top:none;
+	z-index:5;
+}
+#header,#footer{
+	position:relative;
+	z-index:5;
+	padding:10px;
+	border-top:5px solid #000;
+}
+#footer{border:none;}
+#header h1,#footer p{
+	border:1px solid #000;
+	padding:25px;
+	text-align:center;
+}
+#outer{
+	position:relative;
+	width:780px;
+	clear:both;
+	z-index:4;
+}
+#left{
+ width:440px;
+ z-index:1;
+	position:relative;
+	float:left;
+	margin:0 0 0 11px;
+	display:inline;
+	border-top:1px solid #000;
+}
+}
+#right{
+ width:200px;
+ z-index:1;
+	position:relative;
+	float:left;
+	margin:0 0 0 11px;
+	display:inline;
+	border-top:1px solid #000;
+}
+<!--
+#right{
+ width:200px;
+ z-index:1;
+	position:relative;
+	float:left;
+	margin:0 0 0 11px;
+	display:inline;
+	border-top:1px solid #000;
+}-->
+#right{float:right;	margin:0 11px 0 0;}
+ .col{
+	width:200px;
+	position:absolute;
+	z-index:0;
+	left:10px;
+	bottom:0;
+	border:1px solid #000;
+ border-top:none;
+} 
+.one{background:red;}
+.two{background:#FF6600;left:222px;width:334px;}
+<!-- .three{background:#CC3399;left:568px;} -->
+#footer {clear:both;}
+
+html>body .col{top:0}/* hide from ie6 and under*/
+.clearer{
+	height:1px;
+	overflow:hidden;
+	margin-top:-1px;
+	clear:both;
+}
+/* Note I haven't bothered with box model hacks but you will need to do them for ie5.+ if it worries you */
+</style>
+<!--[if lt IE 7]>
+<style type="text/css">
+/* the only hacks in this code are here */
+.col{height:1000em;}
+/*ie5 needs this */
+#footer,#header {height:1px}
+#outer{overflow:hidden;}
+</style>
+<![endif]-->
+</head>
+<body CLASS = "backgrond">
+<div id="wrapper" class = "backgrondwrapper">
+	<div id="header">
+		<h1>Equal Columns - (No hacks) - Read the <a href="http://www.search-this.com/2007/02/26/how-to-make-equal-columns-in-css/">article</a></h1>
+
+		<p>I lied - there are 2 little hacks for ie6 and under only. View source to grab the code.Also note that I haven't bothered with box model hacks for ie5.+ but this method will work fine with those ancient browsers.</p>
+		<p>See <a href="http://www.pmob.co.uk/search-this/absolute-columns3.htm">this example</a> if you want space at the top of the page.</p>
+	</div>
+	<div id="outer">
+		<!-- <img src="Dscard.jpg" alt="Klematis"  /> -->
+		<div id="left">
+			<p>
+				<li>
+				   <a href="/hardware/HARDWARE.HTM">
+				      <img src="COMP-6.JPG" alt="Klematis" width="100" height="100" />
+				   </a>
+				   <a href="/software/software.htm">
+				      <img src="SOFTWARE.JPG" alt="Klematis" width="100" height="100" />
+				   </a>
+				   <a href="/projects/A4-PROG.HTM">
+				      <img src="PROG.JPG" alt="Klematis" width="100" height="100" />
+				   </a>
+				   <a href="/Movies/MOVIE.HTM">
+				      <img src="MOVIE.JPG" alt="Klematis" width="100" height="100" />
+				   </a>
+			   </li>
+			   <li>
+				  <a href="/wanted/A4-WANT.HTM">
+				  	<img src="WANT.JPG" alt="Klematis" width="100" height="100" />
+				  </a>
+				  <a href="/gallery/A4-gall.htm">
+				  	<img src="GALLERY.JPG" alt="Klematis" width="100" height="100" />
+				  </a>
+				  <a href="/info/A4-INFO.HTM">
+				  	<img src="INFO.JPG" alt="Klematis" width="100" height="100" />
+				  </a>
+				  <a href="/bands/A4-BANDS.HTM">
+				  	<img src="BANDS.JPG" alt="Klematis" width="100" height="100" />
+				  </a>
+			  </li>
+			  <li>
+				  <a href="/ordering/A4-ordr.htm">
+				  	<img src="ORDER.JPG" alt="Klematis" width="100" height="100" />
+				  </a>
+				  <a href="/New/A4-NEW.HTM">
+				  	<img src="NEW.JPG" alt="Klematis" width="100" height="100" />
+				  </a>
+				  <a href="/forsale/forsale.htm">
+				  	<img src="SONGS.JPG" alt="Klematis" width="100" height="100" />
+				  </a>
+				  <a href="http://www.dsprototyping.com/sponsors/A4-CLICK.HTM">
+				  	<img src="SPON.JPG" alt="Klematis" width="100" height="100" />
+				  </a>
+			  </li>
+			 </p>
+ 		</div>
+		<!--
+		<div id="content">
+			<h2>Equal Columns</h2>
+			<p>This is some text2 : This is some text 2: This is some text 2: This is some text :This is some text : This is some text :This is some text : This is some text :This is some text : This is some text :This is some text : This is some text :This is some text : This is some text :This is some text : This is some text :This is some text : This is some
+				text </p>
+			<p>This is some text 2: This is some text 2: This is some text 2: This is some text :This is some text : This is some text :This is some text : This is some text :This is some text : This is some text :This is some text : This is some text :This is some text : This is some text :This is some text : This is some text :This is some text : This is some
+				text </p>
+		</div>
+		-->
+		<div id="right">
+
+			<p>This is some text 3: This is some text 3: This is some text 3: This is some text :This is some text : This is some text :This is some text : This is some text </p>
+		</div>
+		<div class="clearer"></div>
+		<div class="col one"></div>
+		<div class="col two"></div> 
+		<!-- <div class="col three"></div> -->
+	</div>
+	<div id="footer">
+
+		<p>Footer</p>
+	</div>
+</div>
+</body>
+</html>

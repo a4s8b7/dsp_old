@@ -1,0 +1,18 @@
+VL,Vendor License,89454536
+RS,Report Start,10012004
+RE,Report End,12312004
+ID,Tax ID,045680223
+TY,Type,Original
+L1,Gross Sales,105.02
+L2,Exempt Sales,22.97
+L3,Net Taxable Sales,82.05
+L4,Clerk Sales,0.00
+L5,Taxable Sales,82.05
+L6,Tax Liability,0.56
+L7,Discount,0.00
+L8,Additional Charge,10.00
+L9,Net Due,10.56
+L10,Less Accelerated,0.00
+L11,Plus Accelerated,0.00
+L12,Balance Due,10.56
+77,82.05,0.56

@@ -1,0 +1,195 @@
+<HTML>
+<HEAD>
+<TITLE>Dungen Studeos projects </TITLE>
+</HEAD>
+<BODY BGCOLOR="#000000" TEXT="#0000FF" LINK="#00FF00" VLINK="0000FF" BACKGROUND=".jpg" ALT='^'><b>
+<H1><U><center>Dungen Studeos projects.</center></u></h1>
+<P align=center><img src="Ds-4log.jpg" alt='WELCOME TO DUNGEN STUDEOS'></P>
+
+
+<script type="text/javascript">
+
+var ultimateshow=new Array()
+
+ultimateshow[0]=['logo-brickshelf.png', '', '']
+ultimateshow[1]=['logo-cdnr.png', 'http://www.dynamicdrive.com', '_new']
+ultimateshow[2]=['logo-fail-blog.png', 'http://www.codingforums.com', '']
+ultimateshow[3]=['logo-allelectronics.gif', '', '']
+ultimateshow[4]=['logo-mouse.gif', '', '']
+ultimateshow[5]=['logo-newark.png', '', '']
+ultimateshow[6]=['logo-ocremix.png', '', '']
+ultimateshow[7]=['logo-dreamincode.png', '', '']
+ultimateshow[8]=['logo-photo-hosting.png', '', '']
+ultimateshow[9]=['logo-paypal.png', '', '']
+ultimateshow[10]=['logo-qbstation.png', '', '']
+
+//configure the below 3 variables to set the dimension/background color of the slideshow
+
+var slidewidth="200px" //set to width of LARGEST image in your slideshow
+var slideheight="100px" //set to height of LARGEST iamge in your slideshow
+var slidecycles="continous" //number of cycles before slideshow stops (ie: "2" or "continous")
+var slidebgcolor='white'
+
+//configure the below variable to determine the delay between image rotations (in miliseconds)
+var slidedelay=3000
+
+////Do not edit pass this line////////////////
+
+var ie=document.all
+var dom=document.getElementById
+var curcycle=0
+
+for (i=0;i<ultimateshow.length;i++)
+	{
+	var cacheimage=new Image()
+	cacheimage.src=ultimateshow[i][0]
+	}
+
+var currentslide=0
+
+function randomize(targetarray)
+	{
+	ultimateshowCopy=new Array()
+	var the_one
+	var z=0
+	while (z<targetarray.length)
+		{
+		the_one=Math.floor(Math.random()*targetarray.length)
+		if (targetarray[the_one]!="_selected!")
+			{
+			ultimateshowCopy[z]=targetarray[the_one]
+			targetarray[the_one]="_selected!"
+			z++
+			}
+		}
+	}
+
+	randomize(ultimateshow)
+
+function rotateimages()
+		{
+		curcycle=(currentslide==0)? curcycle+1 : curcycle
+		ultcontainer='<center>'
+			
+			if (ultimateshowCopy[currentslide][1]!="")
+			ultcontainer+='<a href="'+ultimateshowCopy[currentslide][1]+'" target="'+ultimateshowCopy[currentslide][2]+'">'
+			ultcontainer+='<img src="'+ultimateshowCopy[currentslide][0]+'" border="0">'
+			
+			if (ultimateshowCopy[currentslide][1]!="")
+			ultcontainer+='</a>'
+			ultcontainer+='</center>'
+			
+			if (ie||dom)
+			crossrotateobj.innerHTML=ultcontainer
+			
+			if (currentslide==ultimateshow.length-1) currentslide=0
+			else currentslide++
+					if (curcycle==parseInt(slidecycles) && currentslide==0)
+					return
+					setTimeout("rotateimages()",slidedelay)
+		}
+
+		if (ie||dom)
+		document.write('<div id="slidedom" style="width:'+slidewidth+';height:'+slideheight+'; background-color:'+slidebgcolor+'"></div>')
+
+function start_slider()
+	{
+	crossrotateobj=dom? document.getElementById("slidedom") : document.all.slidedom
+	rotateimages()
+	}
+
+if (ie||dom)
+window.onload=start_slider
+
+</script>
+
+
+
+</BODY>
+
+
+
+<!-- ********************************************************************************** 
+
+<script type="text/javascript">
+
+var sponsor=new Array()      //set up arrays
+var review=new Array()
+var koolplace=new Array()
+
+//load arrays
+
+sponsor[0]=['logo-paypal.png', 'https://www.paypal.com/us/mrb/pal=6RDFR62BFCLXU', '']
+sponsor[1]=['logo-allelectronics.gif', 'http://www.allelectronics.com', '_new']
+sponsor[2]=['logo-ebay.png', 'http://members.ebay.com/ws/eBayISAPI.dll?ViewUserPage&userid=calvinthedestroyer', '']
+sponsor[3]=['logo-cdnr.png', 'http://www.akroncdnr.com', /Computer Design & Repair']
+sponsor[4]=['RT93-Raceways.jpg', 'http://www.route93raceway.com/', '']
+sponsor[5]=['logo-mouse.gif', 'http://www.mouser.com/', '']
+sponsor[6]=['logo-newark.png', 'http://www.newark.com/', '']
+sponsor[7]=['logo-dreamincode.png', 'http://www.dreamincode.net/', '']
+sponsor[8]=['logo-akroncdnr.png', 'http://www.akroncdnr.com', '']
+sponsor[9]=['logo-photo-hosting.png', 'https://www.akroncdnr.com/ph/Login.php', '']
+sponsor[10]=['logo-foaf.png', 'http://www.aquaoptics.net', '']
+sponsor[11]=['http://www.dsprototyping.com/forsale/Basic_programing_books.jpg', 'http://www.dsprototyping.com/forsale/forsale.htm', '']
+sponsor[12]=['http://www.dsprototyping.com/forsale/item-12s.jpg', 'http://www.dsprototyping.com/forsale/forsale.htm', '']
+sponsor[13]=['http://www.dsprototyping.com/forsale/item-09s.jpg', 'http://www.dsprototyping.com/forsale/forsale.htm', '']
+sponsor[14]=['http://www.dsprototyping.com/forsale/item-07s.jpg', 'http://www.dsprototyping.com/forsale/forsale.htm', '']
+sponsor[15]=['', '', '']
+sponsor[16]=['', '', '']
+
+
+review[0]=['Andy can take some wire, weave it into a basket and, it	will hold water. Timothy Riviyarrow, 1993']
+review[1]=['Had to split, to dam hot, went back to Andys were all the babes and Kirbys are. Joel "the man" Fox, 1997']
+review[2]=['Oh boy, its like taking a time machine back to 1994. geust3285, 2006']
+review[]=['yadda yadda yadda.........drink NyQuil.......go to sleep.    Generation Next>>>>skanky spice  rules! Mink', ''. '']
+review[]=['Your page is freaky dude.  write me back, why the hell else would I have an e-mail address.  Oh I am only the 41st person on your page. Ha HA.That is OK tough see you later andy. Jeremy', '', '']
+review[]=['', '', '']
+review[]=['', '', '']
+review[]=['', '', '']
+review[]=['', '', '']
+review[]=['', '', '']
+review[]=['', '', '']
+review[]=['', '', '']
+review[]=['', '', '']
+review[]=['', '', '']
+review[]=['', '', '']
+review[]=['', '', '']
+review[]=['', '', '']
+
+
+koolplace[0]=['digikeylogo.png', 'http://www.digikey.com', 'Digikey Electronics']
+koolplace[1]=['logo-fail-blog.png', 'http://failblog.org/' ]
+koolplace[2]=['logo-brickshelf.png', 'http://www.brickshelf.com/']
+koolplace[3]=['logo-brickshelf.png','http://www.brickshelf.com/']
+koolplace[4]=['logo-ocremix.png', 'http://ocremix.org/', '']
+koolplace[5]=['logo-qbstation.png', 'http://www.qbasicstation.com', '']
+koolplace[6]=['logo-wotsit.png', 'http://www.wotsit.org/', '']
+koolplace[7]=['http://www.dsprototyping.com/projects/LEGO-Clock/lego-clock-2010-2sm.jpg', 'http://www.dsprototyping.com/projects/LEGO-Clock/A4-CLOCK.HTM', '']
+koolplace[8]=['http://www.dsprototyping.com/projects/elec.jpg', 'http://www.dsprototyping.com/projects/electronics/electronics.htm', '']
+koolplace[9]=['http://www.dsprototyping.com/projects/t-pond.jpg', 'http://www.dsprototyping.com/pond/A4-pond.htm', '']
+koolplace[10]=['http://www.dsprototyping.com/projects/Slot-cars/TABLE.JPG', 'http://www.dsprototyping.com/projects/Slot-cars/SLOTTRAK.HTM', '']
+koolplace[11]=['http://www.dsprototyping.com/projects/A4-auto_files/84fiero/t84fiero11.jpg', 'http://www.dsprototyping.com/projects/A4-auto.htm', '']
+koolplace[12]=['http://www.dsprototyping.com/projects/G-R_sm2.jpg', 'http://dsprototyping.com/projects/Rockets/rockets.htm', '']
+koolplace[13]=['http://www.dsprototyping.com/projects/struck-24.jpg', 'http://www.dsprototyping.com/projects/Tonka.htm', '']
+koolplace[14]=['http://www.dsprototyping.com/projects/tn_gocart-08.jpg', 'http://www.dsprototyping.com/projects/gocart.htm', '']
+koolplace[15]=['http://www.dsprototyping.com/projects/AF-trains/tn_AF-977-1.jpg', 'http://www.dsprototyping.com/projects/AF-trains/AF-trains.html', '']
+koolplace[16]=['http://www.dsprototyping.com/Movies/ssp-1.jpg', 'http://www.dsprototyping.com/Movies/A4-M2.HTM', '']
+koolplace[17]=['http://www.dsprototyping.com/Movies/magic-3.jpg', 'http://www.dsprototyping.com/Movies/A4-M5.HTM', '']
+koolplace[18]=['http://www.dsprototyping.com/Movies/lego-s-1.jpg', 'http://www.dsprototyping.com/Movies/A4-M6.HTM', '']
+koolplace[19]=['http://www.dsprototyping.com/Movies/mm-1.jpg', 'http://www.dsprototyping.com/Movies/A4-M7.HTM', '']
+koolplace[20]=['http://www.dsprototyping.com/Movies/td-03.jpg', 'http://www.dsprototyping.com/Movies/A4-M8.HTM', '']
+koolplace[21]=['http://www.dsprototyping.com/gallery/tart-29.jpg', 'http://www.dsprototyping.com/gallery/r1-1.htm', '']
+koolplace[22]=['', '', '']
+koolplace[23]=['', '', '']
+
+
+
+randomize(sponsor)   //randomize arrays
+randomize(review)
+randomize(koolplace)
+
+
+//read arrays ?
+
+
+-->

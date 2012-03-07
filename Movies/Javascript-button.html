@@ -1,0 +1,46 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	<title>JavaScript button Example 4</title>
+	<link rel="STYLESHEET" type="text/css" href="/style/jsc.css">
+</head>
+
+<body>
+<A href="http://www.javascript-coder.com/" onMouseOver="return changeImage()" onMouseOut= "return changeImageBack()" onMouseDown="return handleMDown()" onMouseUp="return handleMUp()">
+<img name="jsbutton" src="buyit15.jpg" width="110" height="28" border="0" alt="javascript button"></A> 
+<SCRIPT language="JavaScript">
+upImage = new Image();
+upImage.src = "buyit15u.jpg";
+downImage = new Image();
+downImage.src = "buyit15d.jpg"
+normalImage = new Image();
+normalImage.src = "buyit15.jpg";
+
+function changeImage()
+{
+  document.images["jsbutton"].src= upImage.src;
+  return true;
+}
+function changeImageBack() 
+{
+   document.images["jsbutton"].src = normalImage.src;
+   return true;
+}
+function handleMDown()
+{
+	document.images["jsbutton"].src = downImage.src;
+	return true;
+}
+function handleMUp()
+{
+	changeImage();
+	return true;
+}
+</SCRIPT> 
+<P>
+Back to <a href="../../button/javascript-button-p1.phtml">JavaScript Button</a> article.
+
+</P>
+</body>
+</html>
