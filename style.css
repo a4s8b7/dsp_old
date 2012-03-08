@@ -34,7 +34,8 @@ body
 			}
 			a:hover
 			{
-				background:url('SOFTWARE.JPG') 0 0 no-repeat;
+			/*	background:url('SOFTWARE.JPG') 0 0 no-repeat;*/
+color:yellow;
 			}	
 			
 			.mainbody
