@@ -1,6 +1,6 @@
 <p style="width:760px;display:block; margin-left:auto; margin-right:auto;">
 <?php
-$imagesfolder='images';
+$imagesfolder='software';
 include('dbinc.inc');
 /*
 $link = mysql_connect('localhost', 'root', 'r00tr00t');
@@ -13,7 +13,7 @@ if(!mysql_select_db('dsp'))
  die('couldnt select database: '.mysql_error());
 }
 */
-$result = mysql_query('select * from global where cpitemname like "Projects"');
+$result = mysql_query('select * from global where cpitemname like "Software" and ai=1');
 if(!$result)
 {
  die('could not query'.mysql_error());
@@ -31,7 +31,7 @@ echo '<h2 style="text-align:center;padding-top:0; margin-top:0;">'.$title.'</h2>
 ?>
 	<img class="centerme" style="margin-top:4px; margin-bottom:4px;" src="<?php echo $headerimg;?>"/>
 <?php
-$result = mysql_query('select * from projects order by label');
+$result = mysql_query('select * from software order by name and ai=1');
 if(!$result)
 {
  die('could not query'.mysql_error());
@@ -42,10 +42,17 @@ if(!$result)
 $ctr = 0;
 while($row = mysql_fetch_array($result, MYSQL_NUM))
 {
- $str1 = '<h3 class="centerme"><a href="'.$basedir."/".$row[3].'">'.$row[2].'</a></h3><p>'.$row[6].'</p>';
- $str2 = '<img class="centerme" src="'.$imagesfolder."/".$row[4].'" alt="'.$row[5].'"/>';
+ $str3='';
+ if($row[2]==1)
+ {
+  $str3 = '<img src="'.$basedir.'/new.gif" alt="new"/>';
+ }
 
 
+ $str1 = '<h3 class="centerme">'.$str3.'<a href="'.$basedir."/".$row[4].'">'.$row[3].'</a></h3><p>'.$row[5].'</p>';
+ $str2 = '<a href="'.$basedir."/".$row[4].'">'.'<img class="centerme" src="'.$imagesfolder."/".$row[6].'" alt="'.$row[7].'"/></a>';
+
+ 
  if($ctr % 2 == 0)
  {
   echo '<tr><td>'.$str1.'</td><td>'.$str2.'</td></tr>'; 
