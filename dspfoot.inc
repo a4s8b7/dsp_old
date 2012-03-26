@@ -13,6 +13,7 @@ google_ad_height = 90;
 src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
 </script>
 </div>
+<!--
 <div class="centerme" style="color:white;width:460px;">
 <p>
 <a href="privacy-policy.html" target="_blank">Dungeon Studio Privacy Policy</a>
@@ -23,7 +24,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
 <a href="mailto:A4S8B7@dsprototyping.com">Contact DSP</a>
 </p>
 </div>
-
+-->
 
 </body>
 </html>

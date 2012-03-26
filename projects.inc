@@ -23,10 +23,10 @@ while($row = mysql_fetch_array($result, MYSQL_NUM))
  $headerimg = "/".$imagesfolder."/".$row[5];
 }
 //echo '<span style="margin-left:auto;margin-right:auto;width:760px;display:block;">'.
-echo $title;
+echo '<h2 style="text-align:center;padding-top:0; margin-top:0;">'.$title.'</h2>';
 //.'</span>';
 ?>
-	<img class="centerme" src="<?php echo $headerimg;?>"/>
+	<img class="centerme" style="margin-top:4px; margin-bottom:4px;" src="<?php echo $headerimg;?>"/>
 <?php
 $result = mysql_query('select * from projects order by label');
 if(!$result)
@@ -39,7 +39,7 @@ if(!$result)
 $ctr = 0;
 while($row = mysql_fetch_array($result, MYSQL_NUM))
 {
- $str1 = '<p class="centerme"><a href="'.$basedir."/".$row[3].'">'.$row[2].'</a></p><p>'.$row[6].'</p>';
+ $str1 = '<h3 class="centerme"><a href="'.$basedir."/".$row[3].'">'.$row[2].'</a></h3><p>'.$row[6].'</p>';
  $str2 = '<img class="centerme" src="'.$imagesfolder."/".$row[4].'" alt="'.$row[5].'"/>';
 
 
@@ -55,8 +55,8 @@ while($row = mysql_fetch_array($result, MYSQL_NUM))
 }
 ?>
 </table>
+<h5 style="padding:0;margin:0;text-align:center;"> <a href="index.html">Back to homepage</a> </h5>
 </p>
-
 
 
 
