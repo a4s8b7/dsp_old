@@ -1,0 +1,124 @@
+/* css for layout 1 */
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+
+*{
+	margin: 0;
+	padding: 0;
+	}
+
+div#container {
+	/* display: flex; */
+	/* flex-direction: column; */
+	min-height: 100vh; 
+	width: 80%;
+	margin: 10px auto;
+	}
+
+header {
+	background-color: red;
+	height: 80px;
+	/* overflow: hidden; */
+	} 
+
+#main {
+	background-image: url("Dungeon-hallway-backgrond.png");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	
+	background-color: white;
+	height: 1350px;
+	/* overflow: hidden; */
+	}
+
+#block1 {
+	background-color: #009;
+	width: 50%;
+	float: left;
+	min-height: 300px;
+	}
+
+#block2 {
+	background-color: #999;
+	min-height: 300px;
+	margin-left: 50%;
+}
+
+#block3 {
+	background-color: #333;
+	width: 50%;
+	float: left;
+	min-height: 300px;
+	/* overflow: hidden; */
+}
+
+#block4 {
+	background-color: #666;
+	min-height: 300px;
+	margin-left: 50%;
+	/* overflow: hidden; */
+}
+
+#block5 {
+	background-color: #333;
+	width: 50%;
+	float: left;
+	min-height: 300px;
+	/* overflow: hidden; */
+}
+
+#block6 {
+	background-color: #666;
+	min-height: 300px;
+	margin-left: 50%;
+	/* overflow: hidden; */
+}
+
+#block7 {
+	background-color: #576;
+	width: 50%;
+	float: left;
+	min-height: 300px;
+	/* overflow: hidden; */
+}
+
+#block8 {
+	background-color: #951;
+	min-height: 300px;
+	margin-left: 50%;
+	/* overflow: hidden; */
+}
+
+div#blockcontainer, div#blockcontainer2, div#blockcontainer3 {
+	 border: 5px solid #000;
+	 margin: 10px;
+	 padding: 10px;
+	 /* overflow: hidden; */
+ }
+ 
+div#footer {
+	background-color: #090;
+	height: 60px;  	/* Footer height */
+	text-align: center;
+	position: below;
+	/* position: fixed; */
+	/* overflow: hidden; */
+	}
+ 
+ 
+ 
