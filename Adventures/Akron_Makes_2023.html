@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="slideshow.css">
+<style>
+	.mySlides {display:none;}
+	ul {
+	  list-style-type: none;
+	  margin: 0;
+	  padding: 0;
+	}
+
+	li a {
+	  display: block;
+	  width: 200px;
+	  background-color: #dddddd;
+	}
+</style>
+<body>
+
+<div id="main">
+	<h2 class="w3-center">Manual Slideshow</h2>
+	<div id="nav_list">
+		<ul>
+		<li><a href="MakerfairsADvent2.html">--Main List</a></li>
+		<li><a href="Akron_makerfair_2014.html">Akron Makerfair 2014</a></li>
+		<li><a href="Akron_Makes_2023.html">Akron Makes 2023</a></li>
+		<li><a href="#L__">|____</a></li>
+		<li><a href="Akron_Mini_Maker_Fair_2016.html">Akron Mini Makerfair 2016</a></li>
+		<li><a href="Akron_Mini_MakerFair_2017.html">Akron Mini Makerfair 2017</a></li>
+		<li><a href="Cleveland_MakerFair 2018.html">Clev Makerfair 2018</a></li>
+		<li><a href="Cleveland_MakerFair 2015.html">Clev Makerfair 2015</a></li>
+		<li><a href="Detroit_MakerFair_2014.html">Detroit Makerfair 2014</a></li>
+		<li><a href="Detroit_MakerFair_2015.html">Detroit Makerfair 2015</a></li>
+		<li><a href="Detroit_MakerFair_2017.html">Detroit Makerfair 2017</a></li>
+		<li><a href="Detroit_MakerFair_2016.html">Detroit Makerfair 2016</a></li>
+		<li><a href="Ingenuity_Fest_2018.html">Ingenuity Fest 2018</a></li>
+		<li><a href="Injinuity_Fest_cleveland 2016.html">Injinuity Fest 2016</a></li>
+		<li><a href="Nashville_MakerFaire 2018.html">Nashville Makerfaire 2018</a></li>
+		<li><a href="NY_MakerFair_2013.html">NY Makerfair 2013</a></li>
+		<li><a href="NY_MakerFair_2014.html">NY Makerfair 2014</a></li>
+		<li><a href="NY_MakerFair_2015.html">NY Makerfair 2015</a></li>
+		<li><a href="NY_MakerFair_2016.html">NY Makerfair 2016</a></li>
+		<li><a href="NY_MakerFair_2017.html">NY Makerfair 2017</a></li>
+		<li><a href="NY_MakerFair_2018.html">NY Makerfair 2018</a></li>
+		<li><a href="Wayne_County_Makerfair_2023.html">Wayne Co Makerfair 2023</a></li>
+		</ul>
+	</div>
+	<div id="slideshow">
+	  	<img class="mySlides" src="Test-2/587001.jpg" style="width:100%"><!-- These images will be stored in /images/foldername/ -->
+		<img class="mySlides" src="Test-2/587002.jpg" style="width:100%">
+		<img class="mySlides" src="Test-2/587003.jpg" style="width:100%">
+		<img class="mySlides" src="Test-2/587004.jpg" style="width:100%">
+		<img class="mySlides" src="Test-2/587005.jpg" style="width:100%">
+		<img class="mySlides" src="Test-2/587006.jpg" style="width:100%">
+		<img class="mySlides" src="Test-2/587007.jpg" style="width:100%">
+		<img class="mySlides" src="Test-2/587008.jpg" style="width:100%">
+		<img class="mySlides" src="Test-2/587009.jpg" style="width:100%">
+		<img class="mySlides" src="Test-2/587010.jpg" style="width:100%">
+		
+	  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+	  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+	</div>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+</body>
+</html>
